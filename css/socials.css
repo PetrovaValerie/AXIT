@@ -1,0 +1,187 @@
+.socials {
+		height: 100%;
+		max-height: 240px;
+		max-width: 100%;
+		margin: 0 auto;
+		background-color: #F8EFEF;
+	}
+
+.socials__row {
+		display: flex;
+		padding-bottom: 20px;
+}
+
+.socials__descr {
+		padding: 10px 10px 0 0;
+}
+
+.socials__title {
+		margin: 13px 0 10px 0;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		color: #333333;
+}
+
+.socials__title:hover {
+		cursor: pointer;
+		text-decoration: underline;
+}
+
+.socials__text {
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 21px;
+		color:#86878B;
+}
+
+           /* LINKS */
+			
+.link {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+}
+
+.link__item {
+		margin-left: 6px;
+		padding: 5px 15px 0 5px;
+}
+
+.link__item:last-child {
+		padding-right: 0;
+}
+
+.link__item_icon {
+		padding: 3px;
+		max-width: 60px;
+		max-height: 60px;
+}
+
+.link__item:hover {
+		transform: scale(1.2, 1.2);
+		transition: all 0.5s ease;
+}
+
+		/* Responsive */
+
+@media (max-width: 1025px) {
+
+	.socials { 
+		max-height: 105px;
+	}
+
+	.socials__title {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.socials__text {
+		font-size: 14px;
+		line-height: 16px;
+		/* min-width: 402px; */
+	}
+												/* LINKS */
+	.link__item {
+		padding: 15px 15px 0 3px;
+	}
+
+	.link__item_icon {
+		width: 64px;
+		height: 64px;
+	}
+}
+
+@media (max-width: 992px) {
+
+.link__item_icon {
+		padding: 3px;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.socials { 
+		max-height: 260px;
+	}
+
+	.link__item_icon {
+		padding: 3px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.socials__descr {
+		padding: 0;
+	}
+	.socials__title {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 576px) {
+
+	.socials__row {
+		flex-wrap: wrap;
+	}
+
+	.socials__title {
+		margin: 45px auto 0px;
+	}
+	
+	.link__item {
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+@media (max-width: 330px) {
+
+	.socials { 
+		max-height: 240px;
+		}
+
+	.socials__descr {
+		margin-bottom: 34px;
+	}
+
+	.socials__title {
+		margin: 45px auto 29px;
+		padding: 0;
+		font-size: 18px;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	.socials__text {
+		margin: 0 auto;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+	}
+
+				/* LINKS */
+	.link__item {
+		margin: 0;
+		padding: 0;
+		margin-bottom: 30px;
+	}
+
+	.link__item:last-child {
+		padding-right: 0;
+	}
+
+	.link__item_icon {
+		padding: 0;
+		margin: 0;
+		width: 26px;
+		height: 26px;
+		margin-right: 18px;
+	}
+}

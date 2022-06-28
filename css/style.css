@@ -1,0 +1,60 @@
+@import url(normalize.css);
+@import url(header.css);
+@import url(banner.css);
+@import url(socials.css);
+@import url(tabs.css);
+@import url(awesome.css);
+@import url(pricing.css);
+@import url(customers.css);
+@import url(slider.css);
+@import url(design.css);
+@import url(contact.css);
+@import url(footer.css);
+
+/* Ширина ограничивающего контейнера - 1170px.
+Поля - 0 15px. */
+
+.container{
+		margin: 0 auto;
+		padding: 0 15px;
+		max-width: 1200px;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+		/* Checkpoints for Adaptive */
+
+@media (max-width: 1230px) {}
+
+@media (max-width: 1025px) {
+
+	.container{
+		margin: 0 auto;
+		padding: 0 15px;
+		width: 100%;
+		/* max-width: 1025px; */
+		max-width: 990px;
+	}
+}
+
+@media (max-width: 992px) {
+
+	.container{
+		margin: 0 auto;
+		padding: 0 15px;
+		width: 100%;
+		max-width: none;
+	}
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 330px) {
+}
+
+
+

@@ -1,0 +1,321 @@
+.customers { 
+		max-height: 740px;
+		max-height: 100%;
+		margin: 0 auto;
+		padding-bottom: 64px;
+}
+
+.customers__title {
+		margin: 45px auto 0;
+		padding: 50px 50px 57px 50px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 36px;
+		font-weight: 400;
+		text-align: center;
+		color: #000000;
+		text-transform: uppercase;
+		cursor: pointer;
+		position: relative;
+}
+
+.customers__title::after {
+		content:'';
+		width: 170px;
+		border-bottom: 1px solid #EC7979;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+}
+
+.customers__descr {
+		margin: 52px auto 72px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		color:#86878B;
+		text-align: center;
+}
+
+                          /* CARDS */
+.customers__list {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.customers__list_item {
+		max-width: 350px;
+}
+
+.manager__report {
+		max-width: 360px;
+		max-height: 180px;
+		padding: 38px 15px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: #86878B;
+		border: 1px solid #E2E2E2;
+		border-radius: 5%;
+		background-color: #E2E2E2;
+		position: relative;
+		cursor: pointer;
+}
+
+.manager__report::after {
+		content: "";
+		position: absolute; /* Абсолютное позиционирование */
+		left: 50px;
+		bottom: -33px; /* Положение треугольника */
+		border: 15px solid transparent; /* Прозрачные границы */
+		border-top: 20px solid rgba(226, 226, 226, 1); /* Добавляем треугольник */
+}
+
+.manager__specification {
+		margin-top: 56px;
+		display: flex;
+}
+
+.manager__img {
+		margin-top: 10px;
+		height: 70px;
+		max-width: 70px;
+		cursor: pointer;
+}
+
+.manager__name {
+		padding: 23px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 33px;
+		color: #000000;
+		cursor: pointer;
+}
+
+.manager__position {
+		padding-left: 23px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+		font-size: 18px;
+		color: #000000;
+		cursor: pointer;
+}
+
+.manager__name:hover,
+.manager__position:hover {
+	text-decoration: underline;
+}
+
+		/* Responsive */
+@media (max-width: 1200px) {
+
+	.manager__report {
+		max-width: 317px;
+		padding: 20px;
+		font-size: 14px;
+		line-height: 16px;
+		border-radius: 15px;
+	}
+
+	.manager__name {
+		padding: 13px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+@media (max-width: 1025px) {
+
+	.customers { 
+		max-height: 620px;
+	}
+
+	.customers__title {
+		margin: 20px auto 0;
+		padding: 50px 50px 63px 50px;
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.customers__descr {
+		margin: 52px 0 0 0;
+		font-size: 14px;
+	}
+
+	.customers__descr::before {
+		width: 142px;
+		height: 1px;
+		margin: -62px auto 40px;
+		left: 43%;
+	}
+
+			/* CARDS */
+
+	.customers__list_item {
+		max-width: 350px;
+	}
+
+	.manager__report {
+		max-width: 317px;
+		padding: 48px 17px;
+		font-size: 14px;
+		line-height: 16px;
+		border-radius: 15px;
+	}
+
+	.manager__specification {
+		margin-top: 46px;
+	}
+
+	.manager__img {
+		max-height: 63px;
+		max-width: 63px;
+	}
+
+	.manager__name {
+		padding: 13px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.manager__position {
+		padding-left: 13px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+
+@media (max-width: 992px) {
+
+	.customers { 
+		max-height: 100%;
+		padding-bottom: 20%; 
+	}
+
+	.customers__list {
+		flex: none;
+		display: grid;
+		grid-gap: 5%;
+		grid-template-columns: repeat (autofit, minmax (200px, 1fr));
+	}
+
+	.customers__list_item {
+		max-width: 300px;
+	}
+
+	.manager__report {
+		max-width: 288px;
+		max-height: 180px;
+		padding: 25px;
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.manager__specification {
+		margin-top: 20px;
+	}
+
+	.manager__img {
+		max-height: 57px;
+		max-width: 57px;
+	}
+}
+
+@media (max-width: 576px) {
+
+	.customers { 
+		max-height: 100%;
+		padding-bottom: 20%; 
+	}
+
+}
+
+@media (max-width: 330px) {
+
+	.customers { 
+		max-height: 100%;
+	}
+
+	.customers__list {
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		grid:none;
+		grid-gap:none;
+}
+
+	.customers__wrapper {
+		margin-top: 35px;
+		height: 100%;
+	}
+
+	.customers__title {
+		margin: 0 auto;
+		padding: 0;
+		min-width: 288px;
+		font-size: 24px;
+		line-height: 28px;
+	}
+	
+	.customers__title::after {
+		width: 134px;
+		padding-bottom: 75px;
+	}
+
+	.customers__descr {
+		margin: 74px auto 20px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+			/* CARDS */
+
+	.customers__list {
+		flex: none;
+	}
+
+	.customers__list_item {
+		max-width: 288px;
+	}
+
+	.manager {
+		max-height: 380px;
+		max-width: 288px;
+	}
+
+	.manager__report {
+		padding: 38px 15px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.manager__specification {
+		margin-top: 50px;
+	}
+
+	.manager__name {
+		padding: 13px;
+		margin-left: 0px;
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	.manager__position {
+		padding-top: 5px;
+		text-align: left;
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+	.manager__name:hover,
+	.manager__position:hover {
+		text-decoration: underline;
+	}
+}

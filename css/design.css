@@ -1,0 +1,147 @@
+.design { 
+		max-height: 450px;
+		margin: 0 auto;
+		font-family: 'Raleway', sans-serif;
+		background: url('../img/bg/design-bg.jpg') center / cover no-repeat;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+}
+
+.design__title {
+		margin: 45px auto 0;
+		padding: 50px 50px 57px 50px;
+		color: #FFFFFF;
+		font-weight: 400;
+		font-size: 36px;
+		text-transform: uppercase;
+		text-align: center;
+		cursor: pointer;
+		position: relative;
+}
+
+.design__title::after {
+		content:'';
+		width: 170px;
+		border-bottom: 1px solid white;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+}
+
+.design__descr {
+		margin: 48px auto 0;
+		font-size: 18px;
+		font-weight: 400;
+		color: #ffffffc2;
+		text-align: center;
+}
+
+.design__btn {
+		display: block;
+		width: 370px;
+		height: 58px;
+		margin: 57px auto 50px;
+		background-color: transparent;
+		color: white;
+		border: 1px solid white;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 600;
+		text-align: center;
+}
+
+.design__btn:hover {
+		color: #EC7979;
+		border: 1px solid #EC7979;
+}
+
+.design__btn:active {
+		color: #FFFFFF;
+		background: #AB4949;
+		border: 1px solid #AB4949;
+}
+		/* Responsive */
+
+@media (max-width: 1025px) {
+
+	.design { 
+		max-height: 355px;
+	}
+
+	.design__title {
+		margin-top: 85px;
+		padding: 10px;
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.design__descr {
+		margin-top: 17px;
+		padding: 20px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.design__descr::before {
+		width: 143px;
+		margin-top: -20px;
+		left: 40%;
+	}
+
+	.design__btn {
+		min-width: 318px;
+		margin: 17px auto 50px;
+	}
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+	.design__btn {
+		width: 218px;
+		margin: 17px auto 50px;
+	}
+}
+
+@media (max-width: 330px) {
+
+	.design { 
+		max-height: 100%;
+	}
+
+	.design__title {
+		margin-top: 48px;
+		padding: 0;
+		padding-bottom: 45px;
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.design__title::after {
+		width: 134px;
+		background: white;
+	}
+
+	.design__descr {
+		max-width: 288px;
+		margin: 67px 0 auto;
+		padding: 0;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.design__btn {
+		min-width: 287px;
+		min-height: 58px;
+	}
+}

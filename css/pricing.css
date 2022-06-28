@@ -1,0 +1,277 @@
+.pricing { 
+		max-height: 900px;
+		max-height: 100%;
+		padding: 10px 0 45px;
+		font-family: 'Raleway', sans-serif;
+		background-color: #F5F5F5;
+}
+
+.price__title {
+		margin: 45px auto 0;
+		padding: 50px 50px 57px 50px;
+		font-size: 36px;
+		font-weight: 400;
+		text-align: center;
+		color: #000000;
+		text-transform: uppercase;
+		cursor: pointer;
+		position: relative;
+}
+
+.price__title::after {
+		content:'';
+		width: 170px;
+		border-bottom: 1px solid #EC7979;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+}
+
+.price__descr {
+		margin: 52px auto 0;
+		font-size: 18px;
+		font-weight: 400;
+		color:#86878B;
+		text-align: center;
+		position: relative;
+}
+
+
+.price__wrapper {
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+.price__card {
+		margin: 79px 15px 0;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+}
+
+.price__card:hover {
+		margin-top: 30px;
+		box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+		transition: all 0.5s ease;
+}
+
+.price__card_item {
+		display: block;
+		padding-top: 15px;
+		width: 370px;
+		height: 52px;
+		border: 1px solid #F5F5F5;
+		background-color: #FFFFFF;
+		color: #86878B;
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+}
+
+.price__card_item:first-child {
+		padding-top: 18px;
+		max-width: 370px;
+		height: 60px;
+		border: 1px solid #F5F5F5;
+		background-color: #333333;
+		color: #FFFFFF;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 24px;
+		line-height: 32px;
+		font-weight: 700;
+}
+
+.price__card_item:nth-child(2) {
+		padding-top: 30px;
+		max-width: 370px;
+		height: 95px;
+		border: 1px solid #F5F5F5;
+		background-color: #333333;
+		color: #FFFFFF;
+		font-family: 'Raleway', sans-serif;
+		font-size: 36px;
+		line-height: 42px;
+		font-weight: 700;
+}
+
+.price__card_item:nth-child(3) {
+		padding-top: 15px;
+		max-width: 370px;
+		height: 50px;
+		border: 1px solid #F5F5F5;
+		background-color: #333333;
+		color: #86878B;
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	.price__card_item:hover {
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
+		transform: translate3d(3px, 3px, 3px);
+		transition: all 0.2s ease;
+		background-color: #c6bfbf;
+		cursor: pointer;
+	}
+
+			/* Responsive */
+
+@media (max-width: 1200px) {
+
+	.price__card {
+		margin: 52px 4px 0;
+	}
+}
+
+@media (max-width: 1025px) {
+
+	.pricing { 
+		max-height: 100%;
+		padding: 10px 0 45px;
+	}
+
+	.price__title {
+		margin: 46px auto 0;
+		padding: 50px;
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.price__descr {
+		margin: 52px auto 0;
+		font-size: 14px;
+	}
+
+	.price__descr::before {
+		width: 143px;
+		left: 43%;
+	}
+
+	.price__card {
+		margin: 52px 15px 0;
+	}
+
+	.price__card_item {
+		padding-top: 10px;
+		width: 315px;
+		height: 44px;
+	}
+
+	.price__card_item:first-child {
+		padding-top: 10px;
+		width: 315px;
+		height: 53px;
+	}
+
+	.price__card_item:nth-child(2) {
+		padding-top: 20px;
+		width: 315px;
+		height: 88px;
+		font-size: 36px;
+	}
+
+	.price__card_item:nth-child(3) {
+		padding-top: 13px;
+		width: 315px;
+		height: 44px;
+		}
+}
+
+@media (max-width: 1010px) {
+
+	.price__card {
+		margin: 27px 5px 0;
+	}
+
+	.price__card_item {
+		max-width: 300px;
+}
+}
+
+@media (max-width: 992px) {
+	.price__wrapper {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 330px) {
+
+	.pricing { 
+		padding: 0 0 28px;;
+	}
+
+	.price__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.price__title {
+		margin: 50px auto 0;
+		padding: 50px 0 0 0;
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.price__title::after {
+		width: 134px;
+		padding-bottom: 75px;
+	}
+
+	.price__descr {
+		margin: 74px auto 0;
+		padding: 0;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.price__card {
+		margin: 27px 15px 0;
+	}
+
+	.price__card_item {
+		padding-top: 15px;
+		max-width: 288px;
+		max-height: 39px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.price__card_item:hover {
+		padding-top: 10px;
+	}
+
+	.price__card_item:first-child {
+		padding-top: 10px;
+		max-width: 288px;
+		max-height: 47px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.price__card_item:nth-child(2) {
+		padding-top: 20px;
+		max-width: 288px;
+		max-height: 78px;
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.price__card_item:nth-child(3) {
+		padding-top: 10px;
+		max-width: 288px;
+		max-height: 39px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
