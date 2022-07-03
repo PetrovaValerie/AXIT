@@ -31,11 +31,10 @@
 }
 
 .header__inner {
-		max-width: 1024px;
-		max-width: 100%;
+		width: 100%;
+		max-width: 1200px;
 		max-height: 100px;
 		max-height: 100%;
-		padding: 1% 15% 0 10%;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
@@ -111,7 +110,7 @@
 
 .menu__item_link {
 		display: inline-block;
-		margin-top: 5px;
+		margin-top: 10px;
 		text-decoration: none;
 		padding: 20px;
 		color: white;
@@ -125,7 +124,7 @@
 @media (max-width: 1230px) {
 
 	.header__inner {
-		padding: 1% 15% 0 5%;
+		padding: 1% 1% 0 5%;
 	}
 
 	.menu__item_link {
