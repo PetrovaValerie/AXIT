@@ -1,6 +1,6 @@
 .header {
 		width: 100%;
-		max-height: 100px;
+		min-height: 100px;
 		position: absolute;
 		padding: 0;
 		top: 0;
@@ -43,8 +43,8 @@
 
 .header__logo_img {
 		display: block;
-		width: 180px;
-		height: 74px;
+		min-width: 89px;
+		min-height: 70px;
 }
 
 .menuToggle {
@@ -149,8 +149,17 @@
 
 	.header__inner {
 		padding: 1% 15% 0 5%;
+		max-height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
 	}
-	
+
+	.header__logo_img {
+		min-width: 67px;
+		min-height: 53px;
+	}
+
 	.menu__item {
 		display: block;
 	}
